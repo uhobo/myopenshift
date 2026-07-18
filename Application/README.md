@@ -27,6 +27,8 @@ user1
 
 https://user1-argocd-server-user1-argocd.apps.cluster-lb9xm.dynamic2.redhatworkshops.io
 
+## Access to my hello world ##
+http://user1-hello-world-user1-application.apps.cluster-lb9xm.dynamic2.redhatworkshops.io/
 
 ## How to run the Docker image
 
