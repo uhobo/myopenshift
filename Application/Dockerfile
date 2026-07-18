@@ -1,22 +1,21 @@
 FROM registry.access.redhat.com/ubi8/nodejs-16
 
-WORKDIR /app
+# Create app directory
+WORKDIR /tmp
 
-# Switch to non-root user for npm install if possible (depends on base image permissions)
-USER 1001
-
+USER root
 # copy packge.json to the workdir
-COPY package*.json ./
+COPY src/package*.json ./
 
 
 # install npm dependencies
-RUN npm install
+RUN npm install && npm audit fix --force
 
 # Copy application file to the 
-COPY Application/src .
+COPY src .
 
 # create local env varibel for the PORT
-ENV PORT 8080
+ENV PORT=8080
 
 USER 1001
 
