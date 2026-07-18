@@ -24,7 +24,7 @@ spec:
               protocol: TCP
           imagePullPolicy: IfNotPresent
 # update with the image you build in part 1
-          image: 'quay.io/gelleroni1/myopenshift:v2'
+          image: 'quay.io/gelleroni1/myopenshift:v3'
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
   strategy:

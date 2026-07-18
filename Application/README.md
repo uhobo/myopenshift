@@ -7,7 +7,7 @@ This is a Node.js application.
 To build the Docker image for this application, navigate to the root directory of the project (where the `Dockerfile` is located) and run the following command:
 
 ```bash
-docker build -t quay.io/gelleroni1/myopenshift:v1 .
+docker build -t quay.io/gelleroni1/myopenshift:v2 .
 ```
 
 This command will build a Docker image named `openshift-app` using the `Dockerfile` in the current directory.
@@ -18,7 +18,7 @@ To push the built Docker image to quay.io, run the following command:
 
 ```bash
 docker login -u gelleroni1 -p mypassword quay.io
-docker push quay.io/gelleroni1/myopenshift:v1
+docker push quay.io/gelleroni1/myopenshift:v2
 ```
 ## Cluster Openshift Console ##
 https://console-openshift-console.apps.cluster-lb9xm.dynamic2.redhatworkshops.io
