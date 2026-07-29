@@ -1,5 +1,5 @@
 deployment:
-  name: blue
-  replicas: 1
-  color: blue
-  mkdir weight: 5
+ - name: blue
+   replicas: 1
+   color: blue
+   weight: 5
