@@ -3,7 +3,7 @@ deployment:
    replicas: 1
    color: blue
    weight: 5
-- name: green
+ - name: green
    replicas: 1
    color: green
    weight: 5
