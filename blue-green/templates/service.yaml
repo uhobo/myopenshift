@@ -1,14 +1,14 @@
 {{- range .Values.deployment }}
-
+---
 apiVersion: v1
 kind: Service
 metadata:
   labels:
-   app: {{ .name }}
-   name: {{ .name }}
+    app: {{ .name }}
+  name: {{ .name }}
 spec:
   ports:
-    port: 8080
+  - port: 8080
     protocol: TCP
     targetPort: 8080
   selector:
